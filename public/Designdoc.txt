@@ -1,0 +1,12 @@
+-This Web App is created to understand and implement a better understanding of react framework.
+-This is not another todo App , this web app signifies my current understanding of react framework.
+-This will be created from scratch (just not the boilerplate code provided by create-react-app;-)).
+-In this Web App following following folder structure is used :
+    -Public folder for all the assets
+    -Src Include all the files.
+    -Src/Components Folder for all the individual components.
+    -src/Index.js is root file.
+    -src/web-vitals to check the performance of the App.
+    
+Also a approach to build UI based on the fundamental understanding of UI/UX is given.
+

@@ -1,10 +1,11 @@
-import './App.css';
-function App() {
-  return (
-    <div>
-      <p>To Do App</p>
-    </div>
-  );
+import Form from './Components/Form';
+import Header  from './Components/Header';
+function Todo(){
+  return(
+   <div>
+    <Header />
+    <Form/>
+   </div>
+   );
 }
-
-export default App;
+export default Todo;

@@ -1,0 +1,9 @@
+In this Web App Following features are required by User:
+    -Heading as "My Day" with current date.
+    -User should be able to add Tasks with details.
+    -user should be able to delete Tasks
+    -User should be able to update added tasks.
+    -user should be able to filter tasks.
+    -user should be able to mark tasks as completed.
+    -total number of tasks added should also be shown.
+    

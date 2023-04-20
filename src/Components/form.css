@@ -1,0 +1,10 @@
+.taskinput{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    border: black;
+    margin: 10%;
+    margin-bottom: 20px;
+    font-size: medium;
+}
