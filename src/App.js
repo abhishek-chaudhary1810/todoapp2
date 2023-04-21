@@ -1,14 +1,20 @@
-import { useState } from 'react';
+import {useState} from 'react';
 import Form from './Components/Form';
 import Header  from './Components/Header';
 import Addtaskbutton from './Components/Addtaskbutton';
-const Todo=()=>{
-  const [userdata,setUserData]=useState('');
+import Taskitem from './Components/Taskitem';
+const Todo = () => {
+  const [userdata,setUserData]=useState([{
+    id: 0,
+    task: ""
+  }]);
+  //console.log(userdata);
   return(
    <div>
     <Header/>
     <Form userdata={userdata} setUserData={setUserData}/>
-    <Addtaskbutton />
+    <Addtaskbutton userdata={userdata} setUserData={setUserData}/>
+    <Taskitem userdata={userdata}/> 
    </div>
    );
 }

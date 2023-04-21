@@ -1,10 +1,11 @@
-const Addtaskbutton = () => {
-  //to handle click of add task. 
-  const handleclick=()=>{
-    //what will happen on handle click
- } 
- return (
-    <div style={{ textAlign: "center", fontFamily: "monospace" }}>
+const Addtaskbutton = ({userdata,setUserData}) => {
+        //to handle click of add task. 
+        const handleclick=()=>{
+          //store existing and previous data in an array of object
+          setUserData(userdata);
+      }
+    return (
+      <div style={{ textAlign: "center", fontFamily: "monospace" }}>
       <button type="button" id="addtask" onClick={handleclick}>
         Add Task
       </button>
@@ -12,5 +13,4 @@ const Addtaskbutton = () => {
     </div>
   );
 };
-
 export default Addtaskbutton;
