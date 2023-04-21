@@ -1,5 +1,11 @@
 import "./form.css";
-function Form(){
+const Form = ({ userdata, setUserData }) => {
+  //event listener to capture onchange value
+  const handlechange = (e) => {
+   // console.log(setUserData);
+    setUserData(e.target.value);
+  };
+  // console.log(userdata);
   return (
     <form>
       <div className="taskinput">
@@ -7,17 +13,14 @@ function Form(){
         <textarea
           type="text"
           id="taskinput"
+          name="taskinput"
+          value={userdata}
           placeholder="Enter Your Task Here..."
+          onChange={handlechange}
         ></textarea>
       </div>
-      <div style={{ textAlign : 'center' ,fontFamily:"monospace"}}>
-        <button type="button" id="addtask">
-          Add Task
-        </button>
-        <label htmlFor="addtask"> </label>
-      </div>
+      <p>{userdata}</p>
     </form>
   );
-}
-
+};
 export default Form;

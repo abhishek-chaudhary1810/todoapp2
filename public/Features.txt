@@ -1,6 +1,21 @@
 In this Web App Following features are required by User:
-    -Heading as "My Day" with current date.
+    -Heading as "My Day" with current date. : Done
     -User should be able to add Tasks with details.
+
+      --Have to store information that is entered by user in a state using event handler and 
+      event listeners , (learn and use synthetic events: how target.value is working and how 
+      binding component to event listener is working).
+      answer: onchange is an synthetic event in react,after setting on change we have to 
+      define a event listener outside return statement in which we have to pass a prop(e.g. "e")
+      and target the value attribute of element in jsx on which this event is applied(nope bro).
+
+      --have to add a event handler on button click.
+        render dom again and add a card with user entered details. 
+        look into this react.dev rendering lists.
+        
+        use array of objects to store all data.
+
+      --creation of a new component with information entered by user. 
     -user should be able to delete Tasks
     -User should be able to update added tasks.
     -user should be able to filter tasks.
